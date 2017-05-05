@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercicios_Secao5
 {
@@ -14,9 +10,9 @@ namespace Exercicios_Secao5
             // exercicio numero 1
             for (int i = 1; i <= 100; i++)
             {
-                if(i % 3 == 0)
+                if (i % 3 == 0)
                 {
-                    Console.WriteLine(string.Format("The number {0} is divisible by 3",i));
+                    Console.WriteLine(string.Format("The number {0} is divisible by 3", i));
                 }
             }
 
@@ -27,20 +23,20 @@ namespace Exercicios_Secao5
                 Console.WriteLine("Write a number or ok to exit: ");
                 var input = Console.ReadLine();
 
-                if(input.ToUpper() == "OK")
+                if (input.ToUpper() == "OK")
                 {
                     break;
                 }
                 result += Convert.ToInt32(input);
             }
-            Console.WriteLine("The sum of input are : " + result);
+            Console.WriteLine("The sum of input is : " + result);
 
 
             //exercicio numero 3
             Console.WriteLine("Tell me a number: ");
             var number = Convert.ToInt32(Console.ReadLine());
             var factorial = 1;
-            for (int i = number ; i > 1; i--)
+            for (int i = number; i > 1; i--)
             {
                 factorial *= i;
             }
@@ -48,24 +44,24 @@ namespace Exercicios_Secao5
 
 
             //exericico numero 4
-            var random = new Random().Next(1,10);
+            var random = new Random().Next(1, 10);
 
             for (int i = 4; i > 0; i--)
             {
                 Console.WriteLine("Guess a number: ");
                 var guess = Convert.ToInt32(Console.ReadLine());
 
-                if(guess == random)
+                if (guess == random)
                 {
                     Console.WriteLine("Awesome! You won the game.");
                     break;
                 }
-                else if(i > 1)
+                else if (i > 1)
                 {
-                    Console.WriteLine(string.Format("Try again! you have {0} attempts",i - 1 ));
+                    Console.WriteLine(string.Format("Try again! you have {0} attempts", i - 1));
                 }
 
-                if(i == 1 && guess != random)
+                if (i == 1 && guess != random)
                 {
                     Console.WriteLine("You lose the game!");
                 }
@@ -75,9 +71,9 @@ namespace Exercicios_Secao5
             //exercicio numero 5
             var numbers = Console.ReadLine();
             var maximum = 0;
-            foreach(var n in numbers)
+            foreach (var n in numbers)
             {
-                if(!n.Equals(",") && (int)(n) > maximum)
+                if (!n.Equals(",") && (int)(n) > maximum)
                 {
                     maximum = n;
                 }
