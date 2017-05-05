@@ -6,8 +6,7 @@ namespace Exercicios_Secao5
     {
         static void Main(string[] args)
         {
-
-            // exercicio numero 1
+            //exercice number 1
             for (int i = 1; i <= 100; i++)
             {
                 if (i % 3 == 0)
@@ -16,7 +15,7 @@ namespace Exercicios_Secao5
                 }
             }
 
-            //exercicio numero 2
+            //exercice number 2
             var result = 0;
             while (true)
             {
@@ -31,8 +30,7 @@ namespace Exercicios_Secao5
             }
             Console.WriteLine("The sum of input is : " + result);
 
-
-            //exercicio numero 3
+            //exercice number 3
             Console.WriteLine("Tell me a number: ");
             var number = Convert.ToInt32(Console.ReadLine());
             var factorial = 1;
@@ -42,8 +40,7 @@ namespace Exercicios_Secao5
             }
             Console.WriteLine("The result of this factorial is : " + factorial);
 
-
-            //exericico numero 4
+            //exercice number 4
             var random = new Random().Next(1, 10);
 
             for (int i = 4; i > 0; i--)
@@ -67,8 +64,7 @@ namespace Exercicios_Secao5
                 }
             }
 
-
-            //exercicio numero 5
+            //exercice number 5
             var numbers = Console.ReadLine();
             var maximum = 0;
             foreach (var n in numbers)
