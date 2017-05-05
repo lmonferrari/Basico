@@ -22,10 +22,8 @@ namespace Exercicios_Secao5
                 Console.WriteLine("Write a number or ok to exit: ");
                 var input = Console.ReadLine();
 
-                if (input.ToUpper() == "OK")
-                {
-                    break;
-                }
+                if (input.ToUpper() == "OK") break;
+  
                 result += Convert.ToInt32(input);
             }
             Console.WriteLine("The sum of input is : " + result);
