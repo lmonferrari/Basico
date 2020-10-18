@@ -1,0 +1,28 @@
+cont = 0
+soma = 0
+
+menor = preco
+maior = preco
+while True:
+    
+    produto = str(input("Digite o nome do produto: "))
+    preco = float(input("Digite o preco do produto: "))
+    soma += preco
+    
+    if preco > 1000:
+        cont += 1
+
+    if preco < menor:
+        menor = preco
+    
+    if preco > maior:
+        maior = preco
+        
+    c = str(input("Quer continuar[S/N]: ")).upper()
+    
+    if c != "S":
+        break
+        
+print(f"\nO total de gastos na compra foi {soma}")
+print(f"{cont} produtos custam mais de R$1000")
+print(f"O produto mais barato é {menor} ")
