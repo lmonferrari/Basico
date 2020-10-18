@@ -1,8 +1,8 @@
 cont = 0
 soma = 0
 
-menor = preco
-maior = preco
+menor = 0
+maior = 0
 while True:
     
     produto = str(input("Digite o nome do produto: "))
